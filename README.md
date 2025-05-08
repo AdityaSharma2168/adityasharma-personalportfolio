@@ -6,7 +6,7 @@ A modern, responsive portfolio website designed and developed by me to showcase 
 
 🚀 Live Demo
 Check out the live site here:
-🔗 
+🔗 https://adityasharma-personal-portfolio.vercel.app/
 
 🛠️ About the Project
 This is my personal portfolio website, built to highlight my background, experience, and technical skills. The design emphasizes clarity, responsiveness, and simplicity.
