@@ -20,7 +20,7 @@ Vercel – Deployment platform
 
 HTML/CSS – Clean and responsive layout
 
-JavaScript/React – (Optional mention if React was used in v0 components)
+JavaScript/React, Also used TypeScript and next.JS.
 
 ⚙️ How I Built It
 Designed and structured the UI using v0.dev
@@ -32,8 +32,4 @@ Deployed the final project using Vercel for fast, global hosting
 Maintained version control with GitHub for easy updates and collaboration
 
 📌 Future Plans
-Add a blog or writing section
-
-Integrate a contact form with backend support
-
-Showcase featured projects with detailed case studies
+Keep adding things as I grow in my career!
