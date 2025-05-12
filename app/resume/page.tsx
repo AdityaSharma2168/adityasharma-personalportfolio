@@ -29,21 +29,28 @@ export default function Resume() {
           <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-gray-700/50">
             <div className="relative w-full">
               <Image
-                src="/images/resume.png"
+                src="/images/resume-updated.png"
                 alt="Aditya Sharma's Resume"
                 width={1200}
                 height={1600}
                 className="w-full h-auto rounded-lg"
               />
 
-              <a
-                href="/images/resume.png"
-                download="Aditya_Sharma_Resume.png"
-                className="absolute bottom-4 right-4 p-3 rounded-full bg-cyan-500 hover:bg-cyan-600 text-white transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-cyan-500/30"
-                aria-label="Download Resume"
-              >
-                <Download size={24} />
-              </a>
+              {/* Download Button */}
+              <div className="absolute bottom-4 right-4">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    alert("This would download your resume as a PDF. Replace with your actual PDF file link.")
+                  }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30"
+                  aria-label="Download Resume as PDF"
+                >
+                  <Download size={18} />
+                  <span>Download PDF</span>
+                </a>
+              </div>
             </div>
           </div>
         </ScrollReveal>
