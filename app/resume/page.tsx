@@ -1,11 +1,46 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import ParticleBackground from "@/components/ParticleBackground"
 import ScrollReveal from "@/components/ScrollReveal"
 import { Download } from "lucide-react"
 
 export default function Resume() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  // Function to download the resume as a PNG
+  const downloadResume = () => {
+    // Fetch the image and convert to blob
+    fetch("/images/resume-updated.png")
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Create a blob URL
+        const blobUrl = URL.createObjectURL(blob)
+
+        // Create a link element
+        const link = document.createElement("a")
+        link.href = blobUrl
+        link.download = "Aditya_Sharma_Resume.png"
+
+        // Append to the document, click it, and remove it
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+
+        // Release the blob URL
+        URL.revokeObjectURL(blobUrl)
+      })
+      .catch((error) => {
+        console.error("Error downloading resume:", error)
+        alert("There was an error downloading the resume. Please try again.")
+      })
+  }
+
   return (
     <main className="relative min-h-screen pt-24 pb-16 px-4 overflow-hidden">
       {/* Particle Background */}
@@ -34,22 +69,21 @@ export default function Resume() {
                 width={1200}
                 height={1600}
                 className="w-full h-auto rounded-lg"
+                priority
               />
 
               {/* Download Button */}
               <div className="absolute bottom-4 right-4">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    alert("This would download your resume as a PDF. Replace with your actual PDF file link.")
-                  }}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30"
-                  aria-label="Download Resume as PDF"
-                >
-                  <Download size={18} />
-                  <span>Download PDF</span>
-                </a>
+                {isClient && (
+                  <button
+                    onClick={downloadResume}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30"
+                    aria-label="Download Resume as PNG"
+                  >
+                    <Download size={18} />
+                    <span>Download Resume</span>
+                  </button>
+                )}
               </div>
             </div>
           </div>

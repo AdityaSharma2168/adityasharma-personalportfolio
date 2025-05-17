@@ -1,0 +1,59 @@
+Aditya Sharma
+408-607-6518
+aditya.sharma2168@gmail.com
+linkedin.com/in/aditya-sharma216github.com/AdityaSharma2168
+Education
+San Jose State University - San Jose, CAExpected Graduation:  May 2027
+Bachelor of Engineering, Software/Systems Engineering
+Relevant Coursework:Computer Science Blockchain and Cryptocurrencies, Data Structures and Algorithms,
+Operating Systems, Computer Networks & Architecture
+Experience
+BlueVoyantMay 2025 - August 2025
+Software Developer/Cybersecurity InternNew York City, NYC
+•
+Incoming Software Developer and Cybersecurity Intern working with the Infrastructure and Security Engineering
+team for Summer 2025.
+NokiaJune 2024 – August 2024
+Data Science InternSunnyvale, CA
+•
+ETL Pipeline Development:Replaced a manual telecom-data workflow with aPython-driven ETL pipeline
+that scraped user records, transformed data withApache Airflow, and stored cleansed records toMongoDB,
+improving project efficiency by68%.
+•
+Data Visualization:Created dashboards inApache Supersetto enhance data visualization by23%, along
+with custom color palettes and e-charts for single and dual access charts.
+•
+Data Support:Aided in communications with10+ customersregarding specific use-cases ofApache
+Supersetfor certain applications.
+StarHubJune 2023 – August 2023
+Software Developer InternSingapore
+•
+Full-Stack Development:Developed afull-stack"Teacher Portal" to streamline course and grade management
+for instructors, utilizing a diverse set of programming languages includingSQL,Java,Python, andPHP.
+•
+Integration:Integrated technologies successfully, specifically withPostgreSQLfor data storage,SpringBootfor
+aRESTful APIbackend, andReactJSfor the user interface.
+•
+Deployment:Deployed a robust application usingAWSservices, increasing reliability by40%through
+containerization withDockerand database optimization withAWS RDS.
+Projects
+CampusNest(1st Place)|Node.js, Express, MongoDB, React, Docker, AWS[View]Apr 2025 – May 2025
+•
+Hackathon:Built a full-stack housing platform usingTypeScript/Node.js/Express, containerized with
+DockeronAWS ECS, serving1000+users across10+ colleges.
+•
+Technologies:Created roommate-matching algorithms and chatbot services (Socket.io, JWT) processing1k+
+messages, improving match satisfaction by85%.
+RepoAI|FastAPI, React, Docker, JavaScript[View]Jan 2025 – Apr 2025
+•
+Open Source:Platform offering modular AI tools (text summarization, sentiment analysis) with aFastAPI
+backend andReactfrontend.
+•
+Technologies:Designed a secure RESTful API with JWT auth and a plugin system for user-contributed AI tools.
+PunchLineBets|Computer Vision, GROQ API, LLAMADec 2024 – Present
+•
+Startup:Creating a UFC betting analytics platform withagentic frameworksto optimize portfolios, scrapes
+live odds withOpenCVwhile usingLLAMAviaGROQ APIfor predictive modeling.
+Technical Skills
+Languages & Frameworks:Python, Java, JavaScript (React, Node/ Express.JS, TypeScript), C++, SQL, Swift
+ML/Cloud:Scikit-learn, TensorFlow, PyTorch, OpenCV, AWS, Docker, Kubernetes, CI/CD Pipelines
