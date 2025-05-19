@@ -18,6 +18,9 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  // Check if PM tag exists and highlight it
+  const hasPMTag = project.tags.includes("PM")
+
   return (
     <div className="card-minimal overflow-hidden shadow-lg hover:shadow-yellow-400/10 transition-all duration-300 hover:translate-y-[-5px] hover:border-yellow-400/30 h-full flex flex-col">
       <div className="relative h-48">
@@ -26,6 +29,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.category && (
           <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-yellow-400/80 backdrop-blur-sm text-black text-xs font-semibold">
             {project.category}
+          </div>
+        )}
+
+        {/* Add PM badge if it exists */}
+        {hasPMTag && (
+          <div className="absolute top-3 right-[85px] px-3 py-1 rounded-full bg-amber-300/90 backdrop-blur-sm text-black text-xs font-semibold">
+            PM
           </div>
         )}
       </div>
@@ -38,7 +48,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag, index) => (
-              <span key={index} className="px-2 py-1 text-xs font-medium bg-dark-700/70 text-yellow-400 rounded-full">
+              <span
+                key={index}
+                className={`px-2 py-1 text-xs font-medium rounded-full ${
+                  tag === "PM" ? "bg-amber-300/90 text-black font-semibold" : "bg-dark-700/70 text-yellow-400"
+                }`}
+              >
                 {tag}
               </span>
             ))}

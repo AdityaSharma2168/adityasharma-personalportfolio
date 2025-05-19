@@ -12,7 +12,7 @@ const projects = [
     description:
       "Built a full-stack housing platform using TypeScript/Node.js/Express, containerized with Docker on AWS ECS, serving 1000+ users across 10+ colleges. Created roommate-matching algorithms and chatbot services (Socket.io, JWT) processing 1k+ messages, improving match satisfaction by 85%.",
     image: "/images/campusnest.png",
-    tags: ["Node.js", "Express", "MongoDB", "React", "Docker", "AWS"],
+    tags: ["PM", "Node.js", "Express", "MongoDB", "React", "Docker", "AWS"],
     github: "https://github.com/AdityaSharma2168/betterdorm",
     demo: null,
     category: "SWE",
