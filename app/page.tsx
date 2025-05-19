@@ -7,7 +7,7 @@ import ParticleBackground from "@/components/ParticleBackground"
 import { Github, Linkedin } from "lucide-react"
 
 export default function Home() {
-  const titles = ["SWE", "Data Science", "Cybersecurity"]
+  const titles = ["Product Management", "SWE", "Data Science", "Cybersecurity"]
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
   const [displayTitle, setDisplayTitle] = useState(titles[0])
   const [isTyping, setIsTyping] = useState(true)
