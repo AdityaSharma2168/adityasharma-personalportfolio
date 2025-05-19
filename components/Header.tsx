@@ -40,7 +40,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <Link
             href="/"
-            className="text-xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
+            className="text-xl font-bold text-amber-300 hover:text-amber-200 transition-colors duration-300"
           >
             Aditya Sharma
           </Link>
@@ -53,8 +53,8 @@ export default function Header() {
                 href={link.path}
                 className={`font-medium transition-colors duration-300 ${
                   pathname === link.path
-                    ? "text-yellow-400 border-b-2 border-yellow-400"
-                    : "text-yellow-400 hover:text-yellow-300"
+                    ? "text-amber-300 border-b-2 border-amber-300"
+                    : "text-amber-300 hover:text-amber-200"
                 }`}
               >
                 {link.name}
@@ -64,7 +64,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none"
+            className="md:hidden text-amber-300 hover:text-amber-200 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -83,8 +83,8 @@ export default function Header() {
                 href={link.path}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   pathname === link.path
-                    ? "bg-dark-700 text-yellow-400"
-                    : "text-yellow-400 hover:bg-dark-700 hover:text-yellow-300"
+                    ? "bg-dark-700 text-amber-300"
+                    : "text-amber-300 hover:bg-dark-700 hover:text-amber-200"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
