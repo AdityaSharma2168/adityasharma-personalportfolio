@@ -20,7 +20,7 @@ export default function ParticleBackground() {
         fullScreen: false,
         particles: {
           color: {
-            value: ["#00FFFF", "#00FF00", "#0088FF"],
+            value: ["#FFDC00", "#E6C800", "#CCAF00"],
           },
           move: {
             direction: "none",
@@ -40,19 +40,19 @@ export default function ParticleBackground() {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 3 },
           },
           links: {
-            color: "#00FFFF",
+            color: "#FFDC00",
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.2,
             width: 1,
           },
         },

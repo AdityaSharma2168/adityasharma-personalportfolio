@@ -55,13 +55,11 @@ export default function Resume() {
 
       <div className="max-w-4xl mx-auto z-10 relative">
         <ScrollReveal>
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400">
-            My Resume
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center yellow-gradient">My Resume</h1>
         </ScrollReveal>
 
         <ScrollReveal delay={200}>
-          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-gray-700/50">
+          <div className="card-minimal p-4">
             <div className="relative w-full">
               <Image
                 src="/images/resume-updated.png"
@@ -77,7 +75,7 @@ export default function Resume() {
                 {isClient && (
                   <button
                     onClick={downloadResume}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg btn-yellow transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/30"
                     aria-label="Download Resume as PNG"
                   >
                     <Download size={18} />

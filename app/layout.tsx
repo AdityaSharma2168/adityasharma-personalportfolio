@@ -1,10 +1,16 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/Header"
 
-const inter = Inter({ subsets: ["latin"] })
+// Initialize the Space Grotesk font
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-space-grotesk",
+})
 
 export const metadata: Metadata = {
   title: "Aditya Sharma | SWE/Data Science/Cybersecurity",
@@ -19,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-gray-900 text-gray-100 min-h-screen`}>
+    <html lang="en" className={`scroll-smooth ${spaceGrotesk.variable}`}>
+      <body className={`bg-dark-900 text-gray-100 min-h-screen ${spaceGrotesk.className}`}>
         <Header />
         {children}
       </body>

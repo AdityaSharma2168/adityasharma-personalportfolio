@@ -6,6 +6,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 13, 17, 23;
   --background-end-rgb: 8, 10, 14;
+  --accent-yellow: 255, 220, 0;
+  --accent-yellow-dark: 230, 200, 0;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,17 +26,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 5px;
+  background: rgba(var(--accent-yellow), 0.5);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00ffff;
+  background: rgba(var(--accent-yellow), 0.8);
 }
 
 /* Glowing text effect */
 .glow-text {
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  text-shadow: 0 0 10px rgba(var(--accent-yellow), 0.7);
 }
 
 /* Gradient animations */
@@ -53,4 +55,51 @@ body {
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 5s ease infinite;
+}
+
+.yellow-accent {
+  color: rgb(var(--accent-yellow));
+}
+
+.yellow-gradient {
+  background: linear-gradient(90deg, rgba(var(--accent-yellow), 1) 0%, rgba(var(--accent-yellow-dark), 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-minimal {
+  background: rgba(25, 30, 40, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.btn-yellow {
+  background: rgb(var(--accent-yellow));
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background: rgba(var(--accent-yellow), 0.9);
+  transform: translateY(-2px);
+}
+
+/* Typing animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-animation::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
 }

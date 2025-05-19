@@ -8,9 +8,10 @@ import { useInView } from "framer-motion"
 interface ScrollRevealProps {
   children: React.ReactNode
   delay?: number
+  className?: string
 }
 
-export default function ScrollReveal({ children, delay = 0 }: ScrollRevealProps) {
+export default function ScrollReveal({ children, delay = 0, className = "" }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
   const [hasAnimated, setHasAnimated] = useState(false)
@@ -24,7 +25,7 @@ export default function ScrollReveal({ children, delay = 0 }: ScrollRevealProps)
   return (
     <div
       ref={ref}
-      className="transition-all duration-700 ease-out"
+      className={`transition-all duration-700 ease-out ${className}`}
       style={{
         opacity: hasAnimated ? 1 : 0,
         transform: hasAnimated ? "translateY(0)" : "translateY(30px)",

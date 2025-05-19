@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import ParticleBackground from "@/components/ParticleBackground"
 import ScrollReveal from "@/components/ScrollReveal"
-import { CheckCircle } from "lucide-react"
 
 export default function About() {
   const [scrollY, setScrollY] = useState(0)
@@ -32,16 +31,14 @@ export default function About() {
 
       <div className="max-w-4xl mx-auto z-10 relative">
         <ScrollReveal>
-          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400">
-            About Me
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center yellow-gradient">About Me</h1>
         </ScrollReveal>
 
-        <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-gray-700/50">
-          <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
+        <div className="card-minimal p-8">
+          <div className="flex flex-col md:flex-row items-start gap-8 mb-8">
             <div className="md:w-1/3">
               <ScrollReveal delay={200}>
-                <div className="rounded-xl overflow-hidden border-4 border-cyan-400 shadow-lg shadow-cyan-400/20 mx-auto max-w-[280px]">
+                <div className="rounded-xl overflow-hidden border-2 border-yellow-400 shadow-lg shadow-yellow-400/20 mx-auto max-w-[280px]">
                   <Image
                     src="/images/aditya-rugby.jpeg"
                     alt="Aditya Sharma playing rugby for SJSU"
@@ -55,73 +52,54 @@ export default function About() {
 
             <div className="md:w-2/3 space-y-6">
               <ScrollReveal delay={300}>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-cyan-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 leading-relaxed">
-                    I'm a Software/Systems Engineering student at San Jose State University with a strong foundation in
-                    Software Engineering, Data Science, and Cybersecurity. With a GPA of 3.8, I'm on track to graduate
-                    in May 2027.
-                  </p>
-                </div>
+                <p className="text-white leading-relaxed">
+                  I'm a Software/Systems Engineering student at San Jose State University with a strong foundation in
+                  Software Engineering, Data Science, and Cybersecurity. With a GPA of 3.8, I'm on track to graduate in
+                  May 2027.
+                </p>
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-cyan-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 leading-relaxed">
-                    My professional experience includes internships at Nokia as a Data Science Intern and StarHub as a
-                    Full-Stack Engineer Intern, where I developed ETL pipelines, created data visualizations, and built
-                    full-stack applications using various technologies including Python, Java, React, and AWS services.
-                  </p>
-                </div>
+                <p className="text-white leading-relaxed">
+                  My professional experience includes internships at Nokia as a Data Science Intern and StarHub as a
+                  Full-Stack Engineer Intern, where I developed ETL pipelines, created data visualizations, and built
+                  full-stack applications using various technologies including Python, Java, React, and AWS services.
+                </p>
               </ScrollReveal>
 
               <ScrollReveal delay={500}>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-cyan-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 leading-relaxed">
-                    I'm passionate about leveraging technology to solve complex problems and am proficient in multiple
-                    programming languages and frameworks including Python, Java, JavaScript, React, Node.js, and various
-                    ML/Cloud technologies. Outside of tech, I'm an active member of the SJSU Rugby team, where I develop
-                    teamwork and leadership skills.
-                  </p>
-                </div>
+                <p className="text-white leading-relaxed">
+                  I'm passionate about leveraging technology to solve complex problems and am proficient in multiple
+                  programming languages and frameworks including Python, Java, JavaScript, React, Node.js, and various
+                  ML/Cloud technologies. Outside of tech, I'm an active member of the SJSU Rugby team, where I develop
+                  teamwork and leadership skills.
+                </p>
               </ScrollReveal>
             </div>
           </div>
 
           {/* Company Logos Section */}
           <ScrollReveal delay={600}>
-            <div className="mt-12">
-              <h2 className="text-xl font-semibold mb-6 text-center text-gray-200 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400">
-                Experience With
-              </h2>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                {/* Nokia Logo */}
-                <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl hover:bg-gray-700/50 transition-all duration-300 w-40 h-32 flex items-center justify-center border border-gray-700/50 hover:border-cyan-400/30 hover:shadow-lg hover:shadow-cyan-400/10 transform hover:-translate-y-1">
-                  <Image src="/images/nokia-logo.png" alt="Nokia" width={120} height={60} className="object-contain" />
+            <h2 className="text-xl font-semibold mb-6 text-center yellow-gradient">Experience With</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              {/* BlueVoyant Logo */}
+              <div className="card-minimal p-6 flex items-center justify-center h-32 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-400/10 transition-all duration-300">
+                <div className="relative w-full h-full">
+                  <Image src="/images/bluevoyant-logo-new.png" alt="BlueVoyant" fill className="object-contain" />
                 </div>
+              </div>
 
-                {/* StarHub Logo */}
-                <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl hover:bg-gray-700/50 transition-all duration-300 w-40 h-32 flex items-center justify-center border border-gray-700/50 hover:border-cyan-400/30 hover:shadow-lg hover:shadow-cyan-400/10 transform hover:-translate-y-1">
-                  <Image
-                    src="/images/starhub-logo.png"
-                    alt="StarHub"
-                    width={120}
-                    height={60}
-                    className="object-contain"
-                  />
+              {/* Nokia Logo */}
+              <div className="card-minimal p-6 flex items-center justify-center h-32 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-400/10 transition-all duration-300">
+                <div className="relative w-full h-full">
+                  <Image src="/images/nokia-logo-new.png" alt="Nokia" fill className="object-contain" />
                 </div>
+              </div>
 
-                {/* Enterprise Neurosystem Logo */}
-                <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl hover:bg-gray-700/50 transition-all duration-300 w-40 h-32 flex items-center justify-center border border-gray-700/50 hover:border-cyan-400/30 hover:shadow-lg hover:shadow-cyan-400/10 transform hover:-translate-y-1">
-                  <Image
-                    src="/images/enterprise-neurosystem-logo.png"
-                    alt="Enterprise Neurosystem"
-                    width={120}
-                    height={60}
-                    className="object-contain"
-                  />
+              {/* StarHub Logo */}
+              <div className="card-minimal p-6 flex items-center justify-center h-32 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-400/10 transition-all duration-300">
+                <div className="relative w-full h-full">
+                  <Image src="/images/starhub-logo-new.png" alt="StarHub" fill className="object-contain" />
                 </div>
               </div>
             </div>

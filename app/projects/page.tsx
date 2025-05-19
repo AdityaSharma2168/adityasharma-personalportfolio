@@ -78,9 +78,7 @@ export default function Projects() {
 
       <div className="max-w-7xl mx-auto z-10 relative">
         <ScrollReveal>
-          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400">
-            My Projects
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center yellow-gradient">My Projects</h1>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

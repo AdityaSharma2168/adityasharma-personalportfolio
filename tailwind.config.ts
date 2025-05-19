@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-space-grotesk)", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -43,15 +46,15 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        cyan: {
-          400: "#22d3ee",
-          500: "#06b6d4",
-          600: "#0891b2",
+        yellow: {
+          400: "#FFDC00",
+          500: "#E6C800",
+          600: "#CCAF00",
         },
-        green: {
-          400: "#4ade80",
-          500: "#22c55e",
-          600: "#16a34a",
+        dark: {
+          700: "#1A1E24",
+          800: "#131720",
+          900: "#0D1117",
         },
         gray: {
           700: "#374151",
@@ -68,7 +71,7 @@ const config: Config = {
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       boxShadow: {
-        glow: "0 0 15px rgba(0, 255, 255, 0.5)",
+        glow: "0 0 15px rgba(255, 220, 0, 0.5)",
       },
     },
   },
