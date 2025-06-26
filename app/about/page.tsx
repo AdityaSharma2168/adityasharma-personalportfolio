@@ -61,9 +61,10 @@ export default function About() {
 
               <ScrollReveal delay={400}>
                 <p className="text-white leading-relaxed">
-                  My professional experience includes internships at Nokia as a Data Science Intern and StarHub as a
-                  Full-Stack Engineer Intern, where I developed ETL pipelines, created data visualizations, and built
-                  full-stack applications using various technologies including Python, Java, React, and AWS services.
+                  I've interned at Nokia and StarHub, and I'm currently working at BlueVoyant for summer 2025 as a
+                  security engineer. Through these experiences, I've developed ETL pipelines, created data
+                  visualizations, and built full-stack applications using various technologies including Python, Java,
+                  React, and AWS services.
                 </p>
               </ScrollReveal>
 
