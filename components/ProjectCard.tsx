@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Github } from "lucide-react"
+import { Github, ExternalLink } from "lucide-react"
 
 interface Project {
   id: number
@@ -69,6 +69,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 aria-label="View GitHub repository"
               >
                 <Github size={20} />
+              </Link>
+            )}
+            {project.demo && (
+              <Link
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-dark-700/70 hover:bg-dark-700 text-yellow-400 transition-colors"
+                aria-label="View live demo"
+              >
+                <ExternalLink size={20} />
               </Link>
             )}
           </div>

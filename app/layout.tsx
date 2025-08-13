@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Aditya Sharma | SWE/Data Science/Cybersecurity",
   description:
     "Personal portfolio of Aditya Sharma - Software Engineering, Data Science, and Cybersecurity professional",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

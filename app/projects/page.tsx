@@ -8,6 +8,17 @@ import ScrollReveal from "@/components/ScrollReveal"
 const projects = [
   {
     id: 1,
+    title: "DataRaft",
+    description:
+      "Comprehensive data analytics platform designed to streamline data processing and visualization workflows. Built with modern web technologies to provide real-time insights and interactive dashboards for data-driven decision making. Features advanced filtering, custom reporting, and seamless data integration capabilities.",
+    image: "/images/dataraft.png",
+    tags: ["PM", "SWE", "React", "Node.js", "Data Analytics", "Dashboard"],
+    github: null,
+    demo: "https://dataraft0vercel.app/",
+    category: "SWE",
+  },
+  {
+    id: 2,
     title: "CampusNest (1st Place)",
     description:
       "Built a full-stack housing platform using TypeScript/Node.js/Express, containerized with Docker on AWS ECS, serving 1000+ users across 10+ colleges. Created roommate-matching algorithms and chatbot services (Socket.io, JWT) processing 1k+ messages, improving match satisfaction by 85%.",
@@ -18,7 +29,18 @@ const projects = [
     category: "SWE",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Oddsy",
+    description:
+      "Advanced betting odds comparison platform that aggregates real-time odds from multiple sportsbooks. Provides users with comprehensive market analysis, trend tracking, and optimal betting opportunities. Features intelligent algorithms for odds comparison and user-friendly interface for quick decision making.",
+    image: "/images/ufc-logo.png",
+    tags: ["PM", "SWE", "React", "API Integration", "Real-time Data"],
+    github: null,
+    demo: "https://oddsyy.vercel.app/",
+    category: "SWE",
+  },
+  {
+    id: 4,
     title: "RepoAI",
     description:
       "Platform offering modular AI tools (text summarization, sentiment analysis) with a FastAPI backend and React frontend. Designed a secure RESTful API with JWT auth and a plugin system for user-contributed AI tools. Implemented advanced caching mechanisms and rate limiting to ensure optimal performance even under high load.",
@@ -27,17 +49,6 @@ const projects = [
     github: "https://github.com/AdityaSharma2168/RepoAI",
     demo: null,
     category: "SWE",
-  },
-  {
-    id: 3,
-    title: "PunchLineBets",
-    description:
-      "Creating a UFC betting analytics platform with agentic frameworks to optimize portfolios, scrapes live odds with OpenCV while using LLAMA via GROQ API for predictive modeling. Developed custom algorithms to analyze fighter statistics, historical performance, and real-time data to provide users with informed betting recommendations and risk assessments.",
-    image: "/images/ufc-logo.png",
-    tags: ["Computer Vision", "GROQ API", "LLAMA"],
-    github: null,
-    demo: null,
-    category: "AI",
   },
   {
     id: 5,
