@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
     "framer-motion": "^10.16.4",
     "jspdf": "^2.5.1",
     "lucide-react": "^0.292.0",
@@ -19,7 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-tsparticles": "^2.12.2",
-    "tailwind-merge": "^2.5.5",
+    "tailwind-merge": "3.5.0",
     "tailwindcss-animate": "^1.0.7",
     "tsparticles-slim": "^2.12.0"
   },
