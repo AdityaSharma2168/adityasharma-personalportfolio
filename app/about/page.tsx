@@ -55,14 +55,14 @@ export default function About() {
                 <p className="text-white leading-relaxed">
                   I'm a Software/Systems Engineering student at San Jose State University with a strong foundation in
                   Software Engineering, Data Science, and Cybersecurity. With a GPA of 3.8, I'm on track to graduate in
-                  May 2027.
+                  May 2028.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
                 <p className="text-white leading-relaxed">
-                  I've interned at Nokia and StarHub, and I'm currently working at BlueVoyant for summer 2025 as a
-                  Product Manager/security engineer. Through these experiences, I've developed ETL pipelines, created data
+                  I've interned at Nokia, StarHub, and BlueVoyant, and I'm currently an AI & Machine Learning Intern at Amazon
+                  working on OpenCV/Ring AI. Through these experiences, I've developed ETL pipelines, created data
                   visualizations, and helped manage full-stack applications using various technologies including Python, Java,
                   React, and AWS services.
                 </p>
@@ -82,7 +82,14 @@ export default function About() {
           {/* Company Logos Section */}
           <ScrollReveal delay={600}>
             <h2 className="text-xl font-semibold mb-6 text-center yellow-gradient">Experience With</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+              {/* Amazon Logo */}
+              <div className="card-minimal p-6 flex items-center justify-center h-32 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-400/10 transition-all duration-300">
+                <div className="relative w-full h-full">
+                  <Image src="/images/amazon-logo.png" alt="Amazon" fill className="object-contain" />
+                </div>
+              </div>
+
               {/* BlueVoyant Logo */}
               <div className="card-minimal p-6 flex items-center justify-center h-32 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-400/10 transition-all duration-300">
                 <div className="relative w-full h-full">
